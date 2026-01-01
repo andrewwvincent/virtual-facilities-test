@@ -473,11 +473,17 @@
                 <button class="btn btn-success" onclick="openCreateGroupModal()">+ Create Group</button>
             </div>
             <div class="filters">
-                <div class="filter-chip active" data-filter="all">All Activities</div>
-                <div class="filter-chip" data-filter="sports">Sports</div>
-                <div class="filter-chip" data-filter="arts">Arts & Music</div>
-                <div class="filter-chip" data-filter="academic">Academic</div>
-                <div class="filter-chip" data-filter="outdoor">Outdoor</div>
+                <div class="filter-chip active" data-filter="all">All Facilities</div>
+                <div class="filter-chip" data-filter="study">Study / Quiet</div>
+                <div class="filter-chip" data-filter="hangout">Hangout / Commons</div>
+                <div class="filter-chip" data-filter="gym">Gym / Sport Court</div>
+                <div class="filter-chip" data-filter="specialty">Specialty Sport</div>
+                <div class="filter-chip" data-filter="creative">Creative Studio</div>
+                <div class="filter-chip" data-filter="maker">Maker / STEM</div>
+                <div class="filter-chip" data-filter="performance">Performance</div>
+                <div class="filter-chip" data-filter="outdoor">Outdoor Social / Active</div>
+                <div class="filter-chip" data-filter="gaming">Gaming / Esports</div>
+                <div class="filter-chip" data-filter="faith">Faith / Community</div>
             </div>
         </div>
 
@@ -647,14 +653,70 @@
                     <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
                     <div class="card-header">
                         <div>
-                            <div class="card-title">📍 Lincoln Park Field #3</div>
-                            <div class="card-subtitle">Sports & Recreation</div>
+                            <div class="card-title">� Central Public Library</div>
+                            <div class="card-subtitle">Study / Quiet</div>
                         </div>
                     </div>
                     <div class="card-info">
                         <div class="info-row">
                             <span class="icon">🏷️</span>
-                            <span>Soccer, Football, Baseball</span>
+                            <span>Study rooms, Quiet areas, Meeting spaces</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">📏</span>
+                            <span>1.2 miles away</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">👥</span>
+                            <span>5 active groups</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Central Public Library')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Central Public Library')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">🏢 Riverside Teen Center</div>
+                            <div class="card-subtitle">Hangout / Commons</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-row">
+                            <span class="icon">🏷️</span>
+                            <span>Lounge, Game room, Social spaces</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">📏</span>
+                            <span>2.1 miles away</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">👥</span>
+                            <span>8 active groups</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Riverside Teen Center')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Riverside Teen Center')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">🏀 Lincoln Rec Center</div>
+                            <div class="card-subtitle">Gym / Sport Court</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-row">
+                            <span class="icon">🏷️</span>
+                            <span>Basketball, Volleyball, Indoor soccer</span>
                         </div>
                         <div class="info-row">
                             <span class="icon">📏</span>
@@ -662,12 +724,12 @@
                         </div>
                         <div class="info-row">
                             <span class="icon">👥</span>
-                            <span>3 active groups</span>
+                            <span>12 active groups</span>
                         </div>
                     </div>
                     <div class="card-actions">
-                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Lincoln Park Field #3')">Start Group Here</button>
-                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Lincoln Park Field #3')">View Details</button>
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Lincoln Rec Center')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Lincoln Rec Center')">View Details</button>
                     </div>
                 </div>
 
@@ -675,14 +737,42 @@
                     <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
                     <div class="card-header">
                         <div>
-                            <div class="card-title">📍 Community Arts Center</div>
-                            <div class="card-subtitle">Arts & Crafts</div>
+                            <div class="card-title">🥋 Dragon Martial Arts Dojo</div>
+                            <div class="card-subtitle">Specialty Sport</div>
                         </div>
                     </div>
                     <div class="card-info">
                         <div class="info-row">
                             <span class="icon">🏷️</span>
-                            <span>Painting, Pottery, Drawing</span>
+                            <span>Karate, Judo, Taekwondo</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">📏</span>
+                            <span>3.2 miles away</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">👥</span>
+                            <span>4 active groups</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Dragon Martial Arts Dojo')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Dragon Martial Arts Dojo')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">🎨 Community Arts Studio</div>
+                            <div class="card-subtitle">Creative Studio</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-row">
+                            <span class="icon">🏷️</span>
+                            <span>Painting, Pottery, Sculpture</span>
                         </div>
                         <div class="info-row">
                             <span class="icon">📏</span>
@@ -690,12 +780,12 @@
                         </div>
                         <div class="info-row">
                             <span class="icon">👥</span>
-                            <span>2 active groups</span>
+                            <span>6 active groups</span>
                         </div>
                     </div>
                     <div class="card-actions">
-                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Community Arts Center')">Start Group Here</button>
-                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Community Arts Center')">View Details</button>
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Community Arts Studio')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Community Arts Studio')">View Details</button>
                     </div>
                 </div>
 
@@ -703,27 +793,195 @@
                     <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
                     <div class="card-header">
                         <div>
-                            <div class="card-title">📍 Riverside Aquatic Center</div>
-                            <div class="card-subtitle">Swimming & Water Sports</div>
+                            <div class="card-title">� Innovation Makerspace</div>
+                            <div class="card-subtitle">Maker / STEM</div>
                         </div>
                     </div>
                     <div class="card-info">
                         <div class="info-row">
                             <span class="icon">🏷️</span>
-                            <span>Swimming, Diving, Water Polo</span>
+                            <span>Robotics, 3D printing, Electronics</span>
                         </div>
                         <div class="info-row">
                             <span class="icon">📏</span>
-                            <span>3.5 miles away</span>
+                            <span>2.7 miles away</span>
                         </div>
                         <div class="info-row">
                             <span class="icon">👥</span>
-                            <span>1 active group</span>
+                            <span>7 active groups</span>
                         </div>
                     </div>
                     <div class="card-actions">
-                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Riverside Aquatic Center')">Start Group Here</button>
-                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Riverside Aquatic Center')">View Details</button>
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Innovation Makerspace')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Innovation Makerspace')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">🎭 Riverside Theater</div>
+                            <div class="card-subtitle">Performance</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-row">
+                            <span class="icon">🏷️</span>
+                            <span>Stage, Rehearsal rooms, Dance studio</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">📏</span>
+                            <span>3.0 miles away</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">👥</span>
+                            <span>9 active groups</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Riverside Theater')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Riverside Theater')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">🌳 Oakwood Park</div>
+                            <div class="card-subtitle">Outdoor Social / Active</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-row">
+                            <span class="icon">🏷️</span>
+                            <span>Fields, Trails, Picnic areas, Skate park</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">📏</span>
+                            <span>1.5 miles away</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">👥</span>
+                            <span>15 active groups</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Oakwood Park')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Oakwood Park')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">🎮 GameZone Esports Arena</div>
+                            <div class="card-subtitle">Gaming / Esports</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-row">
+                            <span class="icon">🏷️</span>
+                            <span>PC gaming, Consoles, LAN events</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">📏</span>
+                            <span>2.9 miles away</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">👥</span>
+                            <span>11 active groups</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('GameZone Esports Arena')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('GameZone Esports Arena')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">⛪ Grace Community Fellowship Hall</div>
+                            <div class="card-subtitle">Faith / Community Multipurpose</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-row">
+                            <span class="icon">🏷️</span>
+                            <span>Multipurpose hall, Meeting rooms, Kitchen</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">📏</span>
+                            <span>1.9 miles away</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">👥</span>
+                            <span>6 active groups</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Grace Community Fellowship Hall')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Grace Community Fellowship Hall')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">🧗 Summit Climbing Gym</div>
+                            <div class="card-subtitle">Specialty Sport</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-row">
+                            <span class="icon">🏷️</span>
+                            <span>Rock climbing, Bouldering</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">📏</span>
+                            <span>4.1 miles away</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">👥</span>
+                            <span>3 active groups</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Summit Climbing Gym')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Summit Climbing Gym')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="favorite-btn" onclick="toggleFavorite(this)">☆</button>
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">🎵 Harmony Music School</div>
+                            <div class="card-subtitle">Performance</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-row">
+                            <span class="icon">🏷️</span>
+                            <span>Practice rooms, Recital hall</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">📏</span>
+                            <span>2.4 miles away</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="icon">👥</span>
+                            <span>8 active groups</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-success btn-small" onclick="startGroupAtLocation('Harmony Music School')">Start Group Here</button>
+                        <button class="btn btn-secondary btn-small" onclick="viewLocationDetails('Harmony Music School')">View Details</button>
                     </div>
                 </div>
             </div>
@@ -807,19 +1065,92 @@
                     <input type="text" class="form-input" placeholder="e.g., Youth Soccer League" required>
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Activity Type *</label>
-                    <select class="form-select" required>
-                        <option value="">Select activity type</option>
-                        <option value="sports">Sports</option>
-                        <option value="arts">Arts & Music</option>
-                        <option value="academic">Academic</option>
-                        <option value="outdoor">Outdoor Activities</option>
-                        <option value="other">Other</option>
+                    <label class="form-label">Facility Category *</label>
+                    <select class="form-select" id="facilityCategory" required>
+                        <option value="">Select facility category</option>
+                        <option value="study">Study / Quiet</option>
+                        <option value="hangout">Hangout / Commons</option>
+                        <option value="gym">Gym / Sport Court</option>
+                        <option value="specialty">Specialty Sport</option>
+                        <option value="creative">Creative Studio</option>
+                        <option value="maker">Maker / STEM</option>
+                        <option value="performance">Performance</option>
+                        <option value="outdoor">Outdoor Social / Active</option>
+                        <option value="gaming">Gaming / Esports</option>
+                        <option value="faith">Faith / Community Multipurpose</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Location *</label>
-                    <input type="text" class="form-input" placeholder="e.g., Lincoln Park Field #3" required>
+                    <label class="form-label">Facility Type *</label>
+                    <select class="form-select" id="facilityType" required>
+                        <option value="">Select facility type</option>
+                        <optgroup label="Study / Quiet">
+                            <option value="public-library">Public Library</option>
+                            <option value="university-library">University/College Library</option>
+                            <option value="tutoring-center">Tutoring Center</option>
+                            <option value="community-college-study">Community College Study Room</option>
+                            <option value="coworking-space">Co-working Space</option>
+                            <option value="museum-library">Museum Library/Meeting Room</option>
+                        </optgroup>
+                        <optgroup label="Hangout / Commons">
+                            <option value="teen-center">Teen Center</option>
+                            <option value="community-center">Community Center</option>
+                            <option value="ymca-lounge">YMCA Lounge</option>
+                            <option value="boys-girls-club">Boys and Girls Club</option>
+                        </optgroup>
+                        <optgroup label="Gym / Sport Court">
+                            <option value="rec-center">Rec Center</option>
+                            <option value="school-gym">School Gym (after-hours)</option>
+                            <option value="church-gym">Church Gym</option>
+                            <option value="private-sports">Private Sports Facility</option>
+                            <option value="university-gym">University/College Gym</option>
+                        </optgroup>
+                        <optgroup label="Specialty Sport">
+                            <option value="martial-arts">Martial Arts Dojo</option>
+                            <option value="climbing-gym">Climbing Gym</option>
+                            <option value="gymnastics">Gymnastics Studio</option>
+                            <option value="skating-rink">Skating Rink</option>
+                        </optgroup>
+                        <optgroup label="Creative Studio">
+                            <option value="art-studio">Art Studio</option>
+                            <option value="pottery">Pottery Studio</option>
+                        </optgroup>
+                        <optgroup label="Maker / STEM">
+                            <option value="makerspace">Makerspace</option>
+                            <option value="robotics-lab">Robotics Lab</option>
+                            <option value="science-museum">Science Museum</option>
+                        </optgroup>
+                        <optgroup label="Performance">
+                            <option value="theater">Theater</option>
+                            <option value="rehearsal-room">Rehearsal Room</option>
+                            <option value="recital-hall">Recital Hall</option>
+                            <option value="practice-space">Practice Space</option>
+                            <option value="dance-studio">Dance Studio</option>
+                            <option value="music-school">Music School</option>
+                            <option value="music-practice">Music Practice Space</option>
+                        </optgroup>
+                        <optgroup label="Outdoor Social / Active">
+                            <option value="park">Park</option>
+                            <option value="trail">Trail</option>
+                            <option value="skate-park">Skate Park</option>
+                            <option value="field">Field</option>
+                            <option value="campsite">Campsite</option>
+                            <option value="summer-camp">Summer Camp</option>
+                        </optgroup>
+                        <optgroup label="Gaming / Esports">
+                            <option value="esports-venue">Esports Venue</option>
+                            <option value="lan-center">LAN Center</option>
+                            <option value="teen-tech-lab">Teen Tech Lab</option>
+                        </optgroup>
+                        <optgroup label="Faith / Community">
+                            <option value="church-hall">Church Hall</option>
+                            <option value="fellowship-hall">Fellowship Hall</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Location Name *</label>
+                    <input type="text" class="form-input" placeholder="e.g., Central Public Library" required>
                 </div>
                 <div class="form-group">
                     <label class="form-label">Schedule *</label>
